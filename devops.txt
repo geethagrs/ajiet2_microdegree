@@ -54,7 +54,6 @@ Untracked files:
 
 *********************************************
 C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git add --all
-
 C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git status
 On branch main
 Your branch is up to date with 'origin/main'.
@@ -71,6 +70,8 @@ C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git config user.email "gr
 C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git config user.name "geethagrs"
 
 //in this below command files commited to the '.git' folder inside the local repository in local PC
+files commits first in first out order
+
 C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git commit -m "commit to devops file"
 [main 282ebf4] commit to devops file
  2 files changed, 83 insertions(+)
@@ -88,6 +89,7 @@ nothing to commit, working tree clean
 //Login to you account in github.com
 
 C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git push
+
 info: please complete authentication in your browser...
 Enumerating objects: 8, done.
 Counting objects: 100% (8/8), done.
@@ -98,6 +100,22 @@ Total 7 (delta 2), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (2/2), done.
 To https://github.com/geethagrs/ajiet2_microdegree.git
    811af2e..0a91605  main -> main
+
+//Download files from the cloud repository
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git pull
+Updating 0a91605..aa6f8c4
+Fast-forward
+ devops.txt | 27 ++++++++++++++++++++-------
+ 1 file changed, 20 insertions(+), 7 deletions(-)
+
+*********************************************************
+
+
+
+
+
+
 
 ************************************************************************************************************
 
