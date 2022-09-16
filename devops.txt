@@ -52,6 +52,34 @@ Untracked files:
   (use "git add <file>..." to include in what will be committed)
         New Text Document.txt
 
+*********************************************
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git add --all
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   New Text Document.txt
+        new file:   devops.txt
+***************************************
+Before committing set the username and email
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git config user.email "grs.kalladka@gmail.com"
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git config user.name "geethagrs"
+
+//in this below command files commited to the '.git' folder inside the local repository in local PC
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git commit -m "commit to devops file"
+[main 282ebf4] commit to devops file
+ 2 files changed, 83 insertions(+)
+ create mode 100644 New Text Document.txt
+ create mode 100644 devops.txt
+**********************************************
+//To add files to the cloud(central) repository from the local repository
+
+
 
 
 
