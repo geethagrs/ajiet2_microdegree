@@ -1,0 +1,83 @@
+GIT: source code management Tool
+     Version Control System
+
+2 Types of VCS
+* Centralised VCS
+* Distributed VCS
+***********************************************************************************************************
+command prompt:
+step1: Login GitHub
+username: geethagrs
+password: Vedish13*
+
+step 2: Create a repository with READme file and License file
+
+step 3: Download Git Repository from the github account (Clone the repository)
+Copy the code path of the repository
+select repository - code - copy HTTPS path
+
+C:\Users\IOT_RESEARCH\Documents\aws>git clone https://github.com/geethagrs/ajiet1_microdegree.git
+Cloning into 'ajiet1_microdegree'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+** Initialise the repository
+
+C:\Users\IOT_RESEARCH\Documents\aws>git init
+
+Initialized empty Git repository in C:/Users/IOT_RESEARCH/Documents/aws/.git/
+
+**To add files in the folder to the local repository
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git add --all
+
+** To check status of the repository
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+// C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git add --all
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   devops.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   devops.txt
+
+//no git add command applied to the following file
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        New Text Document.txt
+
+
+
+
+
+
+
+************************************************************************************************************
+
+ DevOps is a set of practices that combines software development and IT operations.
+
+DevOps Tools
+Plan: Jira Tool (Licensed Tool) Eg: Designing Front Page
+Code: Use Git Repo
+Build: Maven
+Test: Selenium
+Jenkin tools is the heart of the devops. It is used to automate the devops process
+Deployment: aws,Artifactory, Tomcat Application deployment Server
+Operate: Chef, Docker, Ansible
+Docker is the advanced tool used for operation.
+operation container: Kubernets
+
+Important tools: Dockers and Kubernetes
+Monitor Servers: Nagios, Splunk, Prometheus, Grafana
+CICD : Jenkins, Gitlab
+CICD: Continuous Integration Continuous Deployment
+
+
+
+
