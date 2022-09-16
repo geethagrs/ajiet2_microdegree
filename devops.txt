@@ -78,13 +78,26 @@ C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git commit -m "commit to 
  create mode 100644 devops.txt
 **********************************************
 //To add files to the cloud(central) repository from the local repository
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
 
+nothing to commit, working tree clean
 
+//Login to you account in github.com
 
-
-
-
-
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git push
+info: please complete authentication in your browser...
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 1.89 KiB | 967.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/geethagrs/ajiet2_microdegree.git
+   811af2e..0a91605  main -> main
 
 ************************************************************************************************************
 
