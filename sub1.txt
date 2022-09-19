@@ -77,4 +77,110 @@ To https://github.com/geethagrs/ajiet2_microdegree.git
  * [new branch]      sub1 -> sub1
 branch 'sub1' set up to track 'origin/sub1'.
 
-***************************************************************************
+**********************************************************************************************
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git branch sub1
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git checkout sub1
+Switched to a new branch 'sub1'
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git branch
+  main
+* sub1
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git push
+Enumerating objects: 20, done.
+Counting objects: 100% (20/20), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (19/19), done.
+Writing objects: 100% (20/20), 8.03 KiB | 2.68 MiB/s, done.
+Total 20 (delta 8), reused 3 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (8/8), done.
+remote:
+remote: Create a pull request for 'sub1' on GitHub by visiting:
+remote:      https://github.com/geethagrs/ajiet2_microdegree/pull/new/sub1
+remote:
+To https://github.com/geethagrs/ajiet2_microdegree.git
+ * [new branch]      sub1 -> sub1
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git status
+On branch sub1
+Your branch is up to date with 'origin/sub1'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   sub1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git add --all
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git status
+On branch sub1
+Your branch is up to date with 'origin/sub1'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   sub1.txt
+
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git push
+Everything up-to-date
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git status
+On branch sub1
+Your branch is up to date with 'origin/sub1'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   sub1.txt
+
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git commit -m "commit to subbranch1"
+[sub1 1b1517a] commit to subbranch1
+ 1 file changed, 80 insertions(+)
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.16 KiB | 1.16 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/geethagrs/ajiet2_microdegree.git
+   ca7ca9c..1b1517a  sub1 -> sub1
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git status
+On branch sub1
+Your branch is up to date with 'origin/sub1'.
+
+nothing to commit, working tree clean
+
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git checkout main
+Switched to branch 'main'
+Your branch is behind 'origin/main' by 3 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git branch
+* main
+  sub1
+*******************************************************************************************
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git checkout sub1
+Switched to branch 'sub1'
+Your branch is up to date with 'origin/sub1'.
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git rm -r devops.txt
+rm 'devops.txt'
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git status
+On branch sub1
+Your branch is up to date with 'origin/sub1'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    devops.txt
+
+
