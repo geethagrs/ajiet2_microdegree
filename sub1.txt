@@ -1,0 +1,80 @@
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git branch
+* main
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git branch sub1
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git branch
+* main
+  sub1
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git checkout -b sub1
+fatal: a branch named 'sub1' already exists
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git branch -d sub1
+Deleted branch sub1 (was a7c0249).
+****************************************************************************
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git checkout -b sub1
+Switched to a new branch 'sub1'
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git status
+On branch sub1
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    New Text Document.txt
+        modified:   devops.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        sub1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git add --all
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git status
+On branch sub1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   devops.txt
+        renamed:    New Text Document.txt -> sub1.txt
+
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git commit -m "commit to sub1"
+[sub1 ca7ca9c] commit to sub1
+ 2 files changed, 38 insertions(+)
+ rename New Text Document.txt => sub1.txt (100%)
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git status
+On branch sub1
+nothing to commit, working tree clean
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git push
+fatal: The current branch sub1 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin sub1
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree> git push --set-upstream origin sub1
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 715 bytes | 715.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'sub1' on GitHub by visiting:
+remote:      https://github.com/geethagrs/ajiet2_microdegree/pull/new/sub1
+remote:
+To https://github.com/geethagrs/ajiet2_microdegree.git
+ * [new branch]      sub1 -> sub1
+branch 'sub1' set up to track 'origin/sub1'.
+
+***************************************************************************
