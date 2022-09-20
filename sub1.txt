@@ -182,7 +182,11 @@ Your branch is up to date with 'origin/sub1'.
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
         deleted:    devops.txt
+<<<<<<< HEAD
 *******************************************************************************
+=======
+
+>>>>>>> 63d4e34a5e0450cf442f907635f503378b2f0678
 //update deleted files in cloud repository
 
 C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git add --all
@@ -217,6 +221,7 @@ C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git checkout main
 Switched to branch 'main'
 Your branch is behind 'origin/main' by 3 commits, and can be fast-forwarded.
   (use "git pull" to update your local branch)
+<<<<<<< HEAD
 ************************************************************************
 
 ;git log
@@ -226,5 +231,14 @@ enter
 
 ;git revert 'commit id'
 
+=======
+  ;git log
+enter
+>>>>>>> 63d4e34a5e0450cf442f907635f503378b2f0678
 
+;q
+
+;git revert 'commit id'
+
+  
 
