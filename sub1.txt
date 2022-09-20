@@ -217,4 +217,12 @@ C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git checkout main
 Switched to branch 'main'
 Your branch is behind 'origin/main' by 3 commits, and can be fast-forwarded.
   (use "git pull" to update your local branch)
+  ;git log
+enter
+
+;q
+
+;git revert 'commit id'
+
+  
 
