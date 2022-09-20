@@ -1,0 +1,180 @@
+GIT: source code management Tool
+     Version Control System
+
+2 Types of VCS
+* Centralised VCS
+* Distributed VCS
+***********************************************************************************************************
+command prompt:
+step1: Login GitHub
+username: geethagrs
+password: Vedish13*
+
+step 2: Create a repository with READme file and License file
+
+step 3: Download Git Repository from the github account (Clone the repository)
+Copy the code path of the repository
+select repository - code - copy HTTPS path
+
+C:\Users\IOT_RESEARCH\Documents\aws>git clone https://github.com/geethagrs/ajiet1_microdegree.git
+Cloning into 'ajiet1_microdegree'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+** Initialise the repository
+
+C:\Users\IOT_RESEARCH\Documents\aws>git init
+
+Initialized empty Git repository in C:/Users/IOT_RESEARCH/Documents/aws/.git/
+
+**To add files in the folder to the local repository
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git add --all
+
+** To check status of the repository
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+// C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git add --all
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   devops.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   devops.txt
+
+//no git add command applied to the following file
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        New Text Document.txt
+
+*********************************************
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git add --all
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   New Text Document.txt
+        new file:   devops.txt
+***************************************
+Before committing set the username and email
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git config user.email "grs.kalladka@gmail.com"
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git config user.name "geethagrs"
+
+//in this below command files commited to the '.git' folder inside the local repository in local PC
+files commits first in first out order
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git commit -m "commit to devops file"
+[main 282ebf4] commit to devops file
+ 2 files changed, 83 insertions(+)
+ create mode 100644 New Text Document.txt
+ create mode 100644 devops.txt
+**********************************************
+//To add files to the cloud(central) repository from the local repository
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+//Login to you account in github.com
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git push
+
+info: please complete authentication in your browser...
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 1.89 KiB | 967.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/geethagrs/ajiet2_microdegree.git
+   811af2e..0a91605  main -> main
+
+//Download files from the cloud repository
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git pull
+Updating 0a91605..aa6f8c4
+Fast-forward
+ devops.txt | 27 ++++++++++++++++++++-------
+ 1 file changed, 20 insertions(+), 7 deletions(-)
+
+*********************************************************
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git add "devops.txt"
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   devops.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    New Text Document.txt
+
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git commit -m "commit devops"
+[main a7c0249] commit devops
+ 1 file changed, 19 insertions(+), 1 deletion(-)
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    New Text Document.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\IOT_RESEARCH\Documents\aws\ajiet2_microdegree>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 498 bytes | 498.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/geethagrs/ajiet2_microdegree.git
+   aa6f8c4..a7c0249  main -> main
+
+
+************************************************************************************************************
+
+ DevOps is a set of practices that combines software development and IT operations.
+
+DevOps Tools
+Plan: Jira Tool (Licensed Tool) Eg: Designing Front Page
+Code: Use Git Repo
+Build: Maven
+Test: Selenium
+Jenkin tools is the heart of the devops. It is used to automate the devops process
+Deployment: aws,Artifactory, Tomcat Application deployment Server
+Operate: Chef, Docker, Ansible
+Docker is the advanced tool used for operation.
+operation container: Kubernets
+
+Important tools: Dockers and Kubernetes
+Monitor Servers: Nagios, Splunk, Prometheus, Grafana
+CICD : Jenkins, Gitlab
+CICD: Continuous Integration Continuous Deployment
+
+
+
+
